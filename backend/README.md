@@ -2,7 +2,7 @@
 Krisefikser is a full-stack application built with Vue and Spring Boot. 
 The project was developed as the sole assessment for the course `IDATT2106 Systemutvikling` in the Spring 2025 semester at NTNU.
 
-**NB!** This repository contains the backend source code. You can find the **frontend** source code [here](https://gitlab.stud.idi.ntnu.no/idatt2106_2025_team10/frontend)
+**NB!** This repository contains both backend and frontend source code in separate folders (`backend/` and `frontend/`).
 
 ## The team
 - Aryan Malekian
@@ -76,8 +76,8 @@ The backend uses Spring profiles to separate dev and test configurations:
 ### Backend Setup
 1. **Clone the repository**
 ```bash
-git clone https://gitlab.stud.idi.ntnu.no/idatt2106_2025_team10/backend.git
-cd backend
+git clone <this-repository-url>
+cd <repository-name>/backend
 ```
 2. **Configure environment variables**  
 Copy or obtain your `.env` / credentials file. 
@@ -93,10 +93,9 @@ Copy or obtain your `.env` / credentials file.
    ```
 ### Frontend Setup
 
-1. **Clone the frontend repository**  
+1. **Go to the frontend folder in this repository**  
    ```bash
-   git clone https://gitlab.stud.idi.ntnu.no/idatt2106_2025_team10/frontend.git
-   cd frontend
+   cd ../frontend
    ```
 2. **Install dependencies**  
    ```bash
@@ -120,5 +119,4 @@ Open the root folder of the backend and type ```mvn test``` in the terminal
 To see the backend test coverage go [here](https://backend-91339c.pages.stud.idi.ntnu.no/jacoco/) or open the root folder of the backend, type ```mvn clean verify```, then go to target/site/jaccoco and open the index.html in a browser.
 
 #### Admin user credentials
-- Email: test@example.com
-- Password: testpassword
+Course/demo credentials may be used in supervised classroom settings, but should not be treated as production credentials and should not be reused in real deployments.
